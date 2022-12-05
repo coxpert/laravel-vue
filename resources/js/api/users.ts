@@ -45,15 +45,3 @@ export async function user(id: number): Promise<UserType> {
     }
     return response.data.me
 }
-
-export async function suppliers(): Promise<UserType[]> {
-    return (
-        await api.client.request(`
-        query {
-            suppliers {
-                ${USER_BASIC_QUERY_FIELDS} 
-            }
-        }
-    `)
-    ).data.suppliers
-}

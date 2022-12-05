@@ -1,10 +1,11 @@
 import client from './client'
 import { login } from './auth'
-import { user, suppliers } from './users'
+import { user } from './users'
+import { products } from './products'
 
 export default {
     client,
     login,
     user,
-    suppliers,
+    products
 }

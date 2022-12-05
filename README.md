@@ -6,14 +6,20 @@
     composer v2.4.4
     node v16.17.0
 
-## Install dependencies
+## Main Technologies
+    - [Laravel Framework 9](https://laravel.com/docs/9.x/readme)
+    - [Laravel Vite](https://laravel.com/docs/9.x/vite)
+    - [Vue 3](https://vuejs.org/guide/introduction.html)
+    - [Tailwind CSS](https://tailwindcss.com/docs/installation)
+    - [Typescript](https://www.typescriptlang.org/docs/)
+
+## Get Started
+- Install dependencies
 
 ```
 composer install
 yarn install or npm install
 ```
-
-## Run
 
 - [Run Backend](https://github.com/coxpert/type-graphql-backend)
 

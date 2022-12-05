@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+.tiny-scroll-bar::-webkit-scrollbar,
+body .multiselect .multiselect-dropdown::-webkit-scrollbar{
+    width: 4px;
+}
+
+/* Track */
+.tiny-scroll-bar::-webkit-scrollbar-track,
+body .multiselect .multiselect-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.tiny-scroll-bar::-webkit-scrollbar-thumb,
+body .multiselect .multiselect-dropdown::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+/* Handle on hover */
+.tiny-scroll-bar::-webkit-scrollbar-thumb:hover,
+body .multiselect .multiselect-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    width: 0;
+}
+
+body .multiselect {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border-color: #c5c9d4;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    height: auto;
+    min-height: auto;
+}
+body .multiselect.rounded-r,
+body .multiselect.bl-none.rounded-r [type='text']:focus {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+body .multiselect.bl-none {
+    border-left: none;
+}
+body .multiselect.rounded-none,
+body .multiselect.br-none.rounded-none [type='text']:focus {
+    border-radius: 0;
+}
+body .multiselect.br-none {
+    border-right: none;
+}
+
+.light-form [type='text'],
+.light-form [type='email'],
+.light-form [type='url'],
+.light-form [type='password'],
+.light-form [type='number'],
+.light-form [type='date'],
+.light-form [type='datetime-local'],
+.light-form [type='month'],
+.light-form [type='search'],
+.light-form [type='tel'],
+.light-form [type='time'],
+.light-form [type='week'],
+.light-form [multiple],
+.light-form textarea,
+.light-form select {
+    border-color: #c5c9d4;
+}
+
+.light-form *.is-not-valid {
+    border-color: #c23838;
+    color: #c23838;
+}
+
+.light-form *.is-not-valid .multiselect-option {
+    color: #1a202c;
+}
+.light-form .multiselect .multiselect-single-label .multiselect-single-label-text{
+    color: #1a202c;
+    font-weight: normal;
+ }
+
+body .multiselect input.is-not-valid {
+    border-color: #c23838;
+    color: #1a202c;
+}
+
+body .multiselect .multiselect-caret {
+    margin: 0;
+    z-index: 5;
+}
+body .multiselect:focus,
+body .multiselect:active,
+body .multiselect.is-active{
+    outline: none;
+    box-shadow: none;
+}
+body .multiselect input.multiselect-tags-search {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+body .multiselect .multiselect-dropdown {
+    margin-bottom: -1px;
+    max-height: 240px;
+}
+body .multiselect .multiselect-dropdown .multiselect-options {
+    max-height: 240px;
+}
+body .multiselect .multiselect-dropdown .multiselect-option.is-selected {
+    background: rgb(67, 56, 202);
+}
+body .multiselect .multiselect-tags-search-wrapper {
+    margin: 0;
+}
+body .multiselect .multiselect-tags {
+    margin: 0;
+    padding: 0;
+}
+body .multiselect .multiselect-tags .multiselect-tag {
+    padding: 0 0 2px 5px;
+    background: #f1f1f1;
+    color: #222;
+    border: 1px solid rgba(107, 114, 128, .4);
+    font-weight: normal;
+}
+body .multiselect .multiselect-tags .multiselect-tag .multiselect-tag-remove {
+    margin: 2px 0px 0 5px;
+    padding: 0;
+}
+body .multiselect .multiselect-tags-search-copy {
+    height: 0;
+}
+body .multiselect .multiselect-tags .multiselect-tag {
+    padding-right: 5px;
+}
+body .multiselect .multiselect-tag.removed {
+    border-color: rgb(133, 77, 14);
+    background: rgb(254, 249, 195);
+    color: rgb(133, 77, 14);
+}
+
+body .multiselect .multiselect-tag.removed::before {
+    content: " [Removed] - ";
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.date-picker {
+    position: relative;
+}
+
+.date-picker input {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border-color: #c5c9d4;
+    padding: 0.5rem 25px 0.5rem 0.75rem;
+    height: auto;
+    min-height: auto;
+}
+.date-picker.date-picker-append-right .v3dp__popout {
+    left: auto;
+    right: 0;
+}
+
+.date-picker .v3dp__clearable {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    left: auto;
+    font-style: normal !important;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: rgba(0,0,0,.4);
+}
+
+body .multiselect.mb-4 {
+    margin-bottom: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder,
+body .multiselect-placeholder
+{
+    color: #b5bbc9;
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+.title-line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #9ca3af;
+}
+
+.pulsing {
+    -webkit-animation: pulse 1.1s infinite ease-out;
+    animation: pulse 1.1s infinite ease-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: .3; }
+    0% { opacity: 1; }
+}
+
+@-webkit-keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: .3; }
+    0% { opacity: 1; }
+}

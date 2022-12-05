@@ -1,0 +1,51 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
+        "lint:markup": "vue-tsc --noEmit"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{ts,vue}": "eslint --fix",
+        "*": "prettier -w -u"
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.7.4",
+        "@heroicons/vue": "^1.0.6",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/typography": "^0.5.8",
+        "@types/node": "^18.11.9",
+        "@typescript-eslint/eslint-plugin": "^5.42.1",
+        "@typescript-eslint/parser": "^5.42.1",
+        "@vitejs/plugin-vue": "^3.2.0",
+        "@vue/eslint-config-prettier": "^7.0.0",
+        "@vue/eslint-config-typescript": "^11.0.2",
+        "autoprefixer": "^10.4.13",
+        "axios": "^1.1.3",
+        "eslint": "^8.27.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.7.0",
+        "husky": "^8.0.2",
+        "laravel-vite-plugin": "^0.6.0",
+        "lint-staged": "^13.0.3",
+        "lodash": "^4.17.21",
+        "postcss": "^8.4.18",
+        "prettier": "^2.7.1",
+        "tailwindcss": "^3.2.2",
+        "tslib": "^2.4.1",
+        "typescript": "^4.8.4",
+        "vite": "^3.0.0",
+        "vue": "^3.2.41",
+        "vue-class-component": "^8.0.0-0",
+        "vue-property-decorator": "10.0.0-rc.3",
+        "vue-router": "^4.1.6",
+        "vue-tsc": "^1.0.9",
+        "vuex": "^4.1.0"
+    }
+}
